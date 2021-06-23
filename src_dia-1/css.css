@@ -1,0 +1,146 @@
+body {
+    background: #8f99db;
+	margin:0;
+}
+div#div_login {
+    text-align: center;
+    border-style: solid;
+    border-width: thin;
+    width: 300px;
+    margin: auto;
+    height: 170px;
+    padding: 30px;
+    box-shadow: 0px 0px 3px 0px #646464;
+    border-color: #a4a4a4;
+    border-radius: 4px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background: white;
+}
+input#email_login {
+	font-size:14px;
+    width: 93%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: thin;
+    border-color: gray;
+    padding: 10px;
+}
+input#pswd_login {
+	font-size:14px;
+    width: 93%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: thin;
+    border-color: gray;
+    padding: 10px;
+}
+input#button_login {
+	font-size:14px;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    background: #424fae;
+    color: white;
+    width: 100%;
+    margin-bottom: 10px;
+}
+input#button_login:hover{
+	cursor:pointer;
+	background:#5f6fe6;
+}
+div#div_menu_general{
+    height: auto;
+    width: 100%;
+    background: #3a3a3a;
+}
+div#div_menu_sections {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+div#div_menu_sections ul {
+	margin:0px;
+    display: flex;
+	padding:0;
+}
+#section1:hover,#section2:hover,#section3:hover, #section4:hover {
+    background:#525252;
+}
+div#div_menu_sections ul li {
+    list-style: none;
+    padding: 20px;
+}
+div#div_menu_sections ul a {
+    text-decoration: none;
+    color: white;
+}
+
+#section1 {
+    border-color: gray;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-width: thin;
+}
+#section2{
+	border-color: gray;
+    border-right-style: solid;
+    border-width: thin;
+}
+#section3{
+	border-color: gray;
+    border-right-style: solid;
+    border-width: thin;
+}
+#section4{
+	border-color: gray;
+    border-right-style: solid;
+    border-width: thin;
+}
+#img_logo{
+    width: auto;
+    height: 60px;
+}
+div#buscador {
+    margin-left: auto;
+}
+@media only screen and (max-width: 400px) {
+div#div_login {
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+input#pswd_login, input#email_login{
+	width:-webkit-fill-available;
+	
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+input[type="search"]{
+	background:#fff;
+    width:300px;
+    margin:10px;
+    padding:10px 16px;
+    border-radius:32px;
+    outline:none;
+    border:2px solid #ccd1d1;
+    transition:all 0.5s;
+}
