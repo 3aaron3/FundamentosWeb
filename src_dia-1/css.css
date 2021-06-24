@@ -1,5 +1,4 @@
 body {
-    background: #8f99db;
 	margin:0;
 }
 div#div_login {
@@ -67,7 +66,7 @@ div#div_menu_sections {
     display: flex;
     justify-content: space-around;
 }
-div#div_menu_sections ul {
+#menu_laptop {
 	margin:0px;
     display: flex;
 	padding:0;
@@ -112,26 +111,26 @@ div#div_menu_sections ul a {
 div#buscador {
     margin-left: auto;
 }
-@media only screen and (max-width: 400px) {
-div#div_login {
-    width: auto;
-    margin-left: 10px;
-    margin-right: 10px;
+.img_book{
+	width: auto;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -5px;
 }
-input#pswd_login, input#email_login{
-	width:-webkit-fill-available;
-	
-}
+.img_book:hover{
+	opacity:0;
 
 }
-
-
-
-
-
-
-
-
+div#all_sections {
+    overflow: hidden;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
 
 
 input[type="search"]{
@@ -143,4 +142,104 @@ input[type="search"]{
     outline:none;
     border:2px solid #ccd1d1;
     transition:all 0.5s;
+}
+
+
+#all_sections section{
+	position: relative;
+    display: inline-block;
+}
+
+#all_sections section table{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    width: 100%;
+    text-align: justify;
+    color: black;
+    border-spacing: unset;
+	background:white;
+	height: 100%;
+}
+
+#all_sections section table tr td{
+	border-style:solid;
+	border-width:thin;
+	border-spacing:unset;
+}
+h1#title_store {
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+}
+img#logo_index {
+    position: absolute;
+    width: 70px;
+    padding-top: 122px;
+    padding-left: 112px;
+}
+#menu_home nav ul ul{
+	display:none;
+}
+#menu_home nav ul li{
+	padding:0;
+}
+img#menu_logo_home {
+    width: 32px;
+    padding: 12px;
+}
+	
+@media only screen and (min-width: 1024px) {
+	#menu_home{
+		display:none;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	#menu_laptop{
+		display:none;
+	}
+	#menu_home{
+		display:block;
+	}
+	#menu_home nav ul{
+		margin:auto;
+		padding:0;
+	}
+	input[type="search"]{
+		width:auto;
+	}
+	div#buscador{
+		margin-left:unset;
+	}
+	div#div_menu_sections{
+		justify-content: space-between;
+	}
+	#menu_home:hover nav ul ul{
+		display: block;
+		position: absolute;
+		background: #3a3a3a;
+		width: auto;
+	}
+	#menu_home:hover nav ul ul li{
+		padding:10px;
+	}
+	#menu_home nav ul ul li:hover{
+		background:#525252;
+	}
+
+
+}
+
+@media only screen and (max-width: 400px) {
+div#div_login {
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+input#pswd_login, input#email_login{
+	width:-webkit-fill-available;
+	
+}
 }
