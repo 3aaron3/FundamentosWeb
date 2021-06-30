@@ -1,13 +1,13 @@
 body {
-	margin:0;
+    background-color: #141414;
 }
-div#div_login {
+#div_login {
     text-align: center;
     border-style: solid;
     border-width: thin;
     width: 300px;
     margin: auto;
-    height: 170px;
+    height: 206px;
     padding: 30px;
     box-shadow: 0px 0px 3px 0px #646464;
     border-color: #a4a4a4;
@@ -19,7 +19,7 @@ div#div_login {
     position: absolute;
     background: white;
 }
-input#email_login {
+#email_login {
 	font-size:14px;
     width: 93%;
     margin-bottom: 10px;
@@ -30,7 +30,7 @@ input#email_login {
     border-color: gray;
     padding: 10px;
 }
-input#pswd_login {
+#pswd_login {
 	font-size:14px;
     width: 93%;
     margin-bottom: 10px;
@@ -41,7 +41,7 @@ input#pswd_login {
     border-color: gray;
     padding: 10px;
 }
-input#button_login {
+#button_login {
 	font-size:14px;
     border: none;
     border-radius: 4px;
@@ -51,16 +51,19 @@ input#button_login {
     width: 100%;
     margin-bottom: 10px;
 }
-input#button_login:hover{
+#button_login:hover{
 	cursor:pointer;
 	background:#5f6fe6;
 }
-div#div_menu_general{
+#div_menu_general{
     height: auto;
     width: 100%;
-    background: #3a3a3a;
+    background: #313131;
+	z-index:200;
+	position:fixed;
+    box-shadow: 0px 0px 12px 5px #000000;
 }
-div#div_menu_sections {
+#div_menu_sections {
     width: 90%;
     margin: auto;
     display: flex;
@@ -69,51 +72,54 @@ div#div_menu_sections {
 #menu_laptop {
 	margin:0px;
     display: flex;
-	padding:0;
 }
-#section1:hover,#section2:hover,#section3:hover, #section4:hover {
+.sections:hover, .session:hover{
     background:#525252;
 }
-div#div_menu_sections ul li {
+#div_menu_sections ul li {
     list-style: none;
-    padding: 20px;
 }
-div#div_menu_sections ul a {
+#div_menu_sections ul a {
     text-decoration: none;
     color: white;
+	padding: 22px;
+    line-height: 60px;
+}
+#menu_home ul a {
+    padding-right: 180px;
+    margin-left: -15px;
+	line-height: 33px;
 }
 
-#section1 {
+
+.sections {
     border-color: gray;
-    border-right-style: solid;
     border-left-style: solid;
     border-width: thin;
 }
-#section2{
+.session{
 	border-color: gray;
+	border-left-style: solid;
     border-right-style: solid;
     border-width: thin;
 }
-#section3{
+.sections_mobile{
 	border-color: gray;
-    border-right-style: solid;
+    border-bottom-style: solid;
     border-width: thin;
 }
-#section4{
-	border-color: gray;
-    border-right-style: solid;
-    border-width: thin;
-}
+
 #img_logo{
     width: auto;
-    height: 60px;
+    height: 30px;
+    margin-top: 15px;
 }
-div#buscador {
+#buscador {
     margin-left: auto;
 }
 .img_book{
 	width: auto;
-    height: 300px;
+    height: 380px;
     position: relative;
     z-index: 1;
     margin-bottom: -5px;
@@ -122,22 +128,21 @@ div#buscador {
 	opacity:0;
 
 }
-div#all_sections {
+.section-element {
     overflow: hidden;
     display: flex;
-    width: 90%;
-    margin: auto;
+    width: 100%;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 20px;
+	justify-content: center;
+	gap: 20px;
 }
 
 
 input[type="search"]{
 	background:#fff;
     width:300px;
-    margin:10px;
-    padding:10px 16px;
+    margin-top:10px;
+    padding:10px 4px;
     border-radius:32px;
     outline:none;
     border:2px solid #ccd1d1;
@@ -145,17 +150,15 @@ input[type="search"]{
 }
 
 
-#all_sections section{
+.section-container{
 	position: relative;
-    display: inline-block;
 }
 
-#all_sections section table{
+.section-container table{
 	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 12px;
+    top: 0%;
+    left: 0%;
+    font-size: 15px;
     width: 100%;
     text-align: justify;
     color: black;
@@ -164,29 +167,22 @@ input[type="search"]{
 	height: 100%;
 }
 
-#all_sections section table tr td{
+.section-container table tr td{
 	border-style:solid;
 	border-width:thin;
 	border-spacing:unset;
 }
-h1#title_store {
-    text-align: center;
-    text-decoration: underline;
-    color: black;
+	
+#logo_index {
+    width: 90px;
 }
-img#logo_index {
-    position: absolute;
-    width: 70px;
-    padding-top: 122px;
-    padding-left: 112px;
-}
-#menu_home nav ul ul{
+#menu_home ul ul{
 	display:none;
 }
-#menu_home nav ul li{
+#menu_home ul li{
 	padding:0;
 }
-img#menu_logo_home {
+#menu_logo_home {
     width: 32px;
     padding: 12px;
 }
@@ -203,43 +199,56 @@ img#menu_logo_home {
 	#menu_home{
 		display:block;
 	}
-	#menu_home nav ul{
+	#menu_home ul{
 		margin:auto;
 		padding:0;
 	}
 	input[type="search"]{
 		width:auto;
 	}
-	div#buscador{
+	#buscador{
 		margin-left:unset;
 	}
-	div#div_menu_sections{
+	#div_menu_sections{
 		justify-content: space-between;
 	}
-	#menu_home:hover nav ul ul{
+	#menu_home:hover ul ul{
 		display: block;
 		position: absolute;
 		background: #3a3a3a;
-		width: auto;
+		width: 100%;
+		z-index: 100;
+		transform: translate(-105px, 0px);
 	}
-	#menu_home:hover nav ul ul li{
-		padding:10px;
+	#menu_home:hover ul ul li{
+		padding:16px;
 	}
-	#menu_home nav ul ul li:hover{
+	#menu_home ul ul li:hover{
 		background:#525252;
 	}
-
-
 }
 
 @media only screen and (max-width: 400px) {
-div#div_login {
+#div_login {
     width: auto;
     margin-left: 10px;
     margin-right: 10px;
 }
-input#pswd_login, input#email_login{
+#pswd_login, #email_login{
 	width:-webkit-fill-available;
 	
 }
+}
+.nav_header{
+	display:flex;
+}
+
+.title-section {
+    color: white;
+    margin-top: 32px;
+    text-align: center;
+    font-size: 30px;
+}
+#title-novedades{
+	margin-top: 100px;
 }
