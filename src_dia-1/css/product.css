@@ -1,0 +1,148 @@
+body {
+    background-color: #141414;
+}
+a,p,h1,h2{
+	font-family: sans-serif;
+}
+.nav_header{
+	display:flex;
+}
+#div_menu_general{
+    height: auto;
+    width: 100%;
+    background: #313131;
+	z-index:200;
+	position:fixed;
+    box-shadow: 0px 0px 12px 5px #000000;
+}
+
+#div_menu_sections {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+#div_menu_sections ul li {
+    list-style: none;
+}
+#div_menu_sections ul a {
+    text-decoration: none;
+    color: white;
+	padding: 22px;
+    line-height: 60px;
+}
+#img_logo{
+    width: auto;
+    height: 30px;
+    margin-top: 15px;
+}
+#menu_laptop {
+	margin:0px;
+    display: flex;
+}
+.sections:hover, .session:hover{
+    background:#525252;
+}
+.sections {
+    border-color: gray;
+    border-left-style: solid;
+    border-width: thin;
+}
+.sections_mobile{
+	border-color: gray;
+    border-bottom-style: solid;
+    border-width: thin;
+}
+#buscador {
+    margin-left: auto;
+}
+#menu_home ul a {
+    padding-right: 180px;
+    margin-left: -15px;
+	line-height: 33px;
+}
+#menu_home ul ul{
+	display:none;
+}
+#menu_home ul li{
+	padding:0;
+}
+#menu_logo_home {
+    width: 32px;
+    padding: 12px;
+}
+.sections:hover, .session:hover{
+    background:#525252;
+}
+.session{
+	border-color: gray;
+	border-left-style: solid;
+    border-right-style: solid;
+    border-width: thin;
+}
+input[type="search"]{
+	background:#fff;
+    width:300px;
+    margin-top:10px;
+    padding:10px 4px;
+    border-radius:32px;
+    outline:none;
+    border:2px solid #ccd1d1;
+    transition:all 0.5s;
+}
+.title-product {
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 30px;
+}
+#section_general {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+#section_general video {
+    width: auto;
+    height: 300px;
+}
+div#data_contained {
+    background: red;
+    width: 100%;
+}
+@media only screen and (min-width: 1024px) {
+	#menu_home{
+		display:none;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	#div_menu_sections{
+		justify-content: space-between;
+	}
+	#menu_laptop{
+		display:none;
+	}
+	#buscador{
+		margin-left:unset;
+	}
+	#menu_home{
+		display:block;
+	}
+	#menu_home ul{
+		margin:auto;
+		padding:0;
+	}
+	#menu_home:hover ul ul{
+		display: block;
+		position: absolute;
+		background: #3a3a3a;
+		width: 100%;
+		z-index: 100;
+		transform: translate(-105px, 0px);
+	}
+	#menu_home:hover ul ul li{
+		padding:16px;
+	}
+	#menu_home ul ul li:hover{
+		background:#525252;
+	}
+}
