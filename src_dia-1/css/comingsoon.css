@@ -1,0 +1,68 @@
+body {
+	color:white; 
+	font-family: 'Open Sans', sans-serif;
+	background-color: #141414;
+}
+.title_comingsoon {
+	font-size:68px;
+	text-align:center;
+}
+
+#subscribe{
+	text-align:center;
+	margin-bottom: 40px;
+}
+#subscribe .submit_sub {
+	width: 100px;
+}
+#subscribe .submit_sub:hover {
+    background: #777777;
+	color:white;
+	cursor:pointer;
+}
+#subscribe input {
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    border-style: none;
+    border-radius: 6px;
+}
+.styled {
+    padding: 50px;
+	text-align: center;
+}
+ 
+.styled div {
+    display: inline-block;
+    font-size: 90px;
+    border-right: 1px solid #d2d2d2;
+    padding: 6px;
+}
+
+.styled div span {
+    display: block;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+	.styled div {
+		display: unset;
+		font-size: 100px;
+		border-top: 1px solid #d2d2d2;
+		border-right: none;
+		padding:0;
+	}
+	#subscribe input {
+		width: 250px;
+		font-size: 15px;
+	}
+	#subscribe .submit_sub {
+		width: 124px;
+		height: 40px;
+	}
+}
+@media only screen and (max-width: 522px) {
+	.title_comingsoon {
+		font-size: 38px;
+	}
+}

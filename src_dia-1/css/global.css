@@ -76,7 +76,7 @@ a,p,h1,h2,li{
 }
 #div_footer {
     height: auto;
-    width: 100%;
+    width: auto;
     background: #313131;
     z-index: 200;
     text-align: center;
